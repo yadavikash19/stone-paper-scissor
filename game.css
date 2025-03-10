@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: var(--color3);
+    text-align: center;
+}
+
+nav{
+    background-color: var(--color1);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 23px;
+    position: sticky;
+    top: 0;
+}
+footer{
+    background-color: var(--color5);
+    color: rgb(0, 0, 0);
+    padding: 4px;
+    text-align: center;
+    font-size: 20px;
+    bottom: 0;
+}
+main{
+    margin-bottom: 300px;
+}
+
+:root{
+    --color1: #E4572E;
+    --color2: #29335C;
+    --color3: #F3A712;
+    --color4: #A8C686;
+    --color5: #669BBC;
+}
+
+div{
+    margin: auto;
+    margin-top: 20px;
+    width: 80vw;
+}
+
+h1.rounds{
+    padding: 20px;
+    font-size: 13vmin;
+}
+
+/* div.playerScore{
+    border: solid;
+}
+
+div.compScore{
+    border: solid;
+}
+
+div.compTurn{
+    border: solid;
+}
+
+div.playerTurn{
+    border: solid;
+} */
+button.rstGame{
+    background-color: var(--color2);
+    height: 9vmin;
+    width: 42vmin;
+    box-shadow: 1px 1px 5px rgb(19, 18, 18);
+    border: none;
+    font-size: 1.55rem;
+    border-radius: 50%;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+    color: azure;
+}
+
+button.rst:hover{
+    transform: scale(1.15);
+    background-color: #2b4198;;
+}
+button.rst:active{
+    transform: scale(0.9);
+}
+
+h2{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+div.loader{
+    width: 10vmin;
+    height: 10vmin;
+    border-top: solid black 5px;
+    border-radius: 50%;
+    animation: loading 0.5s linear infinite;
+}
+
+
+@keyframes loading {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.fa-star {
+    font-size: 40px; 
+}
+
+
+.rock-paper-scissors {
+    margin: 10px;
+    transition: 0.2s ease-in-out;
+
+}
+.rock-paper-scissors:hover{
+    transform: scale(1.25);
+}
+.rock-paper-scissors:active{
+    transform: scale(0.9);
+}
+
+p.VS{
+    font-size: 50px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+p.pick{
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+div.line{
+    border-top: solid;
+    width: 80vw;
+}
+
+div.rstGame{
+    padding-bottom: 30px;
+}
+/* ------------------------------ */
+.gameHidden{
+    display: none;/
+}
+div.resultHide{
+    display: none;
+}
+.loaderHide{
+    display: none;
+}
+
+h1.resultLine{
+    padding: 100px;
+    font-size: 8vmin;
+}
+
+button.newGame{
+    background-color: var(--color2);
+    height: 9vmin;
+    width: 42vmin;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0);
+    border: none;
+    font-size: 1.75rem;
+    border-radius: 50%;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+    
+}
+
+button:hover{
+    transform: scale(1.25);
+    background-color: #2b4198;;
+}
+button:active{
+    transform: scale(0.9);
+}
+
+div.results{
+    margin-bottom: 100px;
+}

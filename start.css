@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: var(--color3);
+    text-align: center;
+}
+
+nav{
+    background-color: var(--color1);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 23px;
+    position: sticky;
+    top: 0;
+}
+footer{
+    background-color: var(--color5);
+    color: rgb(0, 0, 0);
+    padding: 4px;
+    text-align: center;
+    font-size: 20px;
+    bottom: 0;
+
+}
+main{
+    margin-bottom: 300px;
+}
+
+:root{
+    --color1: #E4572E;
+    --color2: #29335C;
+    --color3: #F3A712;
+    --color4: #A8C686;
+    --color5: #669BBC;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    height: 50vh;
+    width: 70vw;
+    margin: auto;
+}
+
+main p{
+    padding-top: 150px;
+    font-size: 12vmin;
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+button{
+    background-color: var(--color2);
+    height: 9vmin;
+    width: 42vmin;
+    box-shadow: 1px 2px 5px rgb(0, 0, 0);
+    border: none;
+    font-size: 1.75rem;
+    border-radius: 50%;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+    color: azure;
+    
+}
+
+button:hover{
+    transform: scale(1.25);
+    background-color: #2b4198;
+}
+button:active{
+    transform: scale(0.9);
+}

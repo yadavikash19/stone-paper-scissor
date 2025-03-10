@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stone-paper-scissors</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <nav>
+        <h1>Stone Paper Scissor</h1>
+    </nav>
+
+    <div class="results resultHide">
+        <h1 class="resultLine">Result</h1>
+        <button class="newGame">New Game</button>
+    </div>
+
+    <main class="gameHidden">
+        <h1 class="rounds">Round 1</h1>
+
+        <div class="line"></div>
+
+
+        <div class="scores">
+            <div class="playerScore">
+                <h2>Your Score</h2>
+                <div class="stars playerStars">
+                    <i class="fa-regular fa-star" id="star2"></i>
+                    <i class="fa-regular fa-star" id="star2"></i>
+                    <i class="fa-regular fa-star" id="star1"></i>
+                </div>
+            </div>
+            <div class="compScore">
+                <h2>Computer's Score</h2>
+                <div class="stars compStars">
+                    <i class="fa-regular fa-star" id="star2"></i>
+                    <i class="fa-regular fa-star" id="star1"></i>
+                    <i class="fa-regular fa-star" id="star1"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="compTurn">
+            <h2 id="compLine">Computer thinking...</h2>
+            <div class="loader"></div>
+        </div>
+        <p class="VS">VS</p>
+
+        <div class="playerTurn">
+            <h2>CHOOSE YOURS</h2>
+            <div class="options">
+                <i class="fa-solid rock-paper-scissors rock fa-hand-back-fist fa-5x" id="rock"></i>
+                <i class="fa-solid rock-paper-scissors paper fa-hand fa-5x" id="paper"></i>
+                <i class="fa-solid rock-paper-scissors scissor fa-hand-scissors fa-5x" id="scissors"></i>
+            </div>
+            <p class="pick">(Select your option)</p>
+        </div>
+        <div class="rstGame">
+            <button class="rstGame">RESET GAME</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Made with 💘!</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
